@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --font-padrao: 'DM sans', sans-serif;
+    --cor01: #00b8e0;
+    --cor02: #2E474F;
+    --cor03: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background__main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/new.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    padding: 0rem 7rem;
+    font-family: var(--font-padrao);
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--cor01);
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.329);
+    border: 1px solid var(--cor02);
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
+    background-color: var(--cor02);
+}
+
+main {
+    transform: translateY(-20%);
+    padding: 20rem;
+}
+
+.border__arround__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    margin-top: 8rem;
+    border: 1px solid var(--cor02);
+    border-radius: 20px;
+    background-color: var(--cor02);
+    height: 40rem;
+    padding: 2rem;
+    width: 50%;
+    margin-left: 19.7rem;
+}
+
+.first__p {
+    font-family: var(--font-padrao);
+    font-size: 3rem;
+    font-variant: small-caps;
+    font-weight: 900;
+    color: var(--cor01);
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.329);
+    text-align: center;
+}
+
+.second__p {
+    margin-left: 3.9rem;
+    font-family: var(--font-padrao);
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-weight: 900;
+    color: var(--cor01);
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.329);
+}
+
+.alert__student {
+    margin-top: 20px;
+    font-family: var(--font-padrao);
+    color: var(--cor03);
+}
+
+#tabela {
+    margin-top: 3rem;
+    font-family: var(--font-padrao);
+    color: var(--cor01);
+    width: 500px; /* Define um tamanho menor */
+    max-width: 500px;
+    table-layout: fixed; /* Garante que a largura seja respeitada */
+    border-collapse: collapse; /* Evita espaços extras */
+    background-color: var(--cor02); /* Deixa a tabela visível no fundo escuro */
+}
+
+#tabela th, #tabela td {
+    padding: 10px;
+    border: 1px solid white; /* Bordas para melhor visualização */
+    text-align: center;
+}
+
+.size__tr {
+    font-size: 2rem;
+}
+
+#tabela td {
+    color: white;
+}
+
+/* Media Query para Tablets (largura máxima de 1024px) */
+@media screen and (max-width: 1042px) {
+    h1 {
+        font-size: 3rem; /* Reduz o tamanho do título */
+        padding: 0 3rem;
+    }
+
+    main {
+        transform: translateY(-10%);
+        padding: 5rem;
+    }
+
+    .border__arround__content {
+        width: 80%; /* Aumenta a largura para ocupar mais espaço */
+        margin-left: auto; /* Centraliza */
+        margin-right: auto;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .first__p {
+        font-size: 2.5rem; /* Ajusta tamanho do texto */
+    }
+
+    .second__p {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    #tabela {
+        width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+        max-width: 100%;
+    }
+
+    #tabela th, #tabela td {
+        padding: 8px; /* Ajusta o espaçamento */
+        font-size: 1.2rem; /* Reduz a fonte para melhor encaixe */
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    h1 {
+        font-size: 3rem; /* Reduz o tamanho do título */
+        padding: 0 3rem;
+    }
+
+    main {
+        transform: translateY(-10%);
+        padding: 5rem;
+    }
+
+    .border__arround__content {
+        width: 80%; /* Aumenta a largura para ocupar mais espaço */
+        margin-left: auto; /* Centraliza */
+        margin-right: auto;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .first__p {
+        font-size: 2.5rem; /* Ajusta tamanho do texto */
+    }
+
+    .second__p {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    #tabela {
+        width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+        max-width: 100%;
+    }
+
+    #tabela th, #tabela td {
+        padding: 8px; /* Ajusta o espaçamento */
+        font-size: 1.2rem; /* Reduz a fonte para melhor encaixe */
+    }
+}
+
+/* Media Query para Celulares (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Diminui mais o título */
+        padding: 0 2rem;
+        text-align: center; /* Centraliza */
+    }
+
+    main {
+        transform: translateY(-5%);
+        padding: 2rem;
+    }
+
+    .border__arround__content {
+        width: 90%; /* Faz ocupar quase toda a tela */
+        padding: 1rem;
+    }
+
+    .first__p {
+        font-size: 2rem; /* Diminui o tamanho do texto */
+    }
+
+    .second__p {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    }
+
+    #tabela {
+        font-size: 1rem; /* Diminui a fonte da tabela */
+    }
+
+    #tabela th, #tabela td {
+        padding: 5px;
+        font-size: 1rem; /* Reduz fonte para caber melhor */
+    }
+}
+
+
+/* Media Query para Celulares Pequenos (largura máxima de 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .border__arround__content {
+        width: 100%;
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .first__p {
+        font-size: 1.8rem;
+    }
+
+    .second__p {
+        font-size: 1.2rem;
+    }
+
+    #tabela {
+        font-size: 0.9rem;
+    }
+
+    #tabela th, #tabela td {
+        padding: 4px;
+    }
+}
+

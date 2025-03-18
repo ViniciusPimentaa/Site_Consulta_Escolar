@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Bragantino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="background__main"></div>
+    <main>
+        <h1 class="title__school">Colégio Bragantino</h1>
+        <div class="line"></div>
+    </main>
+    <section class="container">
+        <div class="border__arround">
+            <h1 class="title__painel">Painel de Acesso</h1>
+            <label class="label__painel">Entre com sua CIDE</label>
+            <input type="text" id="login" class="login__input" placeholder="Digite sua CIDE" oninput="this.value = this.value.replace(/\D/g, '')" maxlength="6">
+            <label class="label__painel_pw">Senha</label>
+            <input class="pw__input" type="password" id="password" placeholder="Digite sua senha">
+            <button id="button__enter" onclick="verificacaoLogin()">Entrar</button>
+            <a class="position__link1" href="pages/forgotpw.html" target="_blank">Esqueci minha Senha</a>
+            <a class="position__link2" href="pages/forgotcide.html"target="_blank">Esqueci minha CIDE</a>
+        </div>
+    </section>
+
+    
+
+    <script src="scripts/engine.js"></script>
+</body>
+</html>

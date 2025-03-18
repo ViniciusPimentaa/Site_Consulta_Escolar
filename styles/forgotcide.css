@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+    --cor0: #2E474F;
+    --cor1: #00b8e0;
+    
+
+    --fonte-titulo: 'DM Sans', sans-serif;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+.background__main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/new.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h1 > a:link {
+    text-decoration: none;
+}
+
+#link__home {
+    color: inherit;
+}
+
+.title__school {
+    display: block;
+    align-items: center;
+    color: var(--cor1);
+    border: 1px solid --cor0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.384);
+    background-color: var(--cor0);
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.329);
+    padding: 3vh;
+    margin-top: 10vh;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    font-variant: small-caps;
+    position: relative;
+}
+
+.line {
+    width: 20rem;
+    height: 1px;
+    background-color: var(--cor1);
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.border__arround {
+    border: 1px solid var(--cor0);
+    background-color: var(--cor0);
+    border-radius: 20px;
+    padding: 0px 50px;
+    height: 20em;
+    box-shadow: 4px 4px 10px #00000062;
+}
+
+.title__painel {
+    font-family: var(--fonte-titulo);
+    font-size: 2.3em;
+    font-variant: small-caps;
+    color: var(--cor1);
+    text-shadow: 1px 1px 2px #00000054;
+}
+
+.label__painel {
+    font-size: 1.5rem;
+    font-family: var(--fonte-titulo);
+    font-weight: bolder;
+    color: var(--cor1);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-shadow: 1px 1px 2px #00000054;
+}
+
+.attencion__paragraph {
+    font-family: var(--fonte-titulo);
+    font-size: 1em;
+    font-weight: 900;
+    font-variant: small-caps;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px #00000054;
+}
+
+.login__input {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.1rem;
+}
+
+input[type="email"] {  
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+.label__painel_pw {
+    font-size: 1.5rem;
+    font-family: var(--fonte-titulo);
+    font-weight: bolder;
+    color: var(--cor1);
+    display: flex;
+    justify-content: center;
+    margin-top: 3.8em;
+}
+
+#button__enter {
+    color: #00b8e0;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    font-family: var(--fonte-titulo);
+    font-size: medium;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4.5rem;
+    cursor: pointer;
+    font-variant: small-caps;
+}
+
+#mensagem {
+    font-weight: 900;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .title__school {
+        font-size: 2em;
+        padding: 10px;
+        margin-top: 5vh;
+    }
+
+    .title__painel {
+        margin-left: 1vh;
+    }
+
+    .border__arround {
+        font-size: 99%;
+        padding: 10px;
+        margin-top: vh;
+    }
+
+    .line {
+        width: 15rem; /* Reduz o tamanho da linha em telas pequenas */
+    }
+
+    input[type="email"] {
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0.5px solid black;
+
+    #button__enter {
+        font-size: medium;
+        margin-top: 4.6rem;
+    }
+
+}
+
+}

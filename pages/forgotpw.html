@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/forgotpw.css">
+</head>
+<body>
+    <div class="background__main"></div>
+    <header>
+        <h1 class="title__school"><a id="link__home" href="../index.html">Colégio Bragantino</a></h1>
+        <div class="line"></div>
+    </header>
+    <section class="container">
+        <div class="border__arround">
+            <h1 class="title__painel">Recuperar Senha</h1>
+            <label class="label__painel">Digite seu e-mail</label>
+            <p class="attencion__paragraph">*Mesmo e-mail utilizado para cadastro</p>
+            <input type="email" class="login__input" placeholder="Digite seu e-mail">
+            <button type="submit" id="button__enter" onclick="textoAlerta()">Enviar</button>
+            <p id="mensagem"></p>
+
+        </div>
+    </section>
+    <script src="../scripts/engine-pw.js"></script>
+</body>
+</html>
